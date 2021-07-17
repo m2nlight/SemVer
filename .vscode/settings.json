@@ -1,0 +1,23 @@
+{
+    "search.exclude": {
+        ".vs": true,
+        ".idea": true,
+        "publish": true,
+        "**/bin/": true,
+        "**/TestResults": true,
+        "**/coverage.json": true,
+        "**/coverage.opencover.xml": true,
+        "**/coverage.info": true,
+        "**/logs": true
+    },
+    "files.exclude": {
+        ".vs": true,
+        ".idea": true,
+        "**/bin/": false,
+        "**/obj/": true,
+        "**/publish/": false,
+        "**/mono_crash.*": true
+    },
+    "coverage-gutters.lcovname": "coverage.info",
+    "editor.formatOnSave": true,
+}

@@ -1,0 +1,24 @@
+{
+    "recommendations": [
+        "ms-dotnettools.csharp",
+        "leo-labs.dotnet",
+        "k--kato.docomment",
+        "tintoy.msbuild-project-tools",
+        "josefpihrt-vscode.roslynator",
+        "doggy8088.quicktype-refresh",
+        "formulahendry.dotnet-test-explorer",
+        "urbanoanderson.vscode-coverlet",
+        "ryanluker.vscode-coverage-gutters",
+        "zxh404.vscode-proto3",
+        "streetsidesoftware.code-spell-checker",
+        "gruntfuggly.todo-tree",
+        "eamodio.gitlens",
+        "mhutchie.git-graph",
+        "pflannery.vscode-versionlens",
+        "yzhang.markdown-all-in-one",
+        "davidanson.vscode-markdownlint",
+        "dotjoshjohnson.xml",
+        "humao.rest-client",
+        "msjsdiag.debugger-for-edge"
+    ]
+}

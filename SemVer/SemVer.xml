@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SemVer</name>
+    </assembly>
+    <members>
+        <member name="T:SemVer.SemanticVersion">
+            <summary>
+            语义化版本 2.0.0 的一个实现
+            <para><see href="https://semver.org" /></para>
+            </summary>
+        </member>
+        <member name="M:SemVer.SemanticVersion.#ctor(System.Int32,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            创建一个 Semantic Versioning 对象
+            </summary>
+            <param name="major">主版本号</param>
+            <param name="minor">次版本号</param>
+            <param name="patch">修订号</param>
+            <param name="prerelease">先行版本号</param>
+            <param name="build">版本编译信息</param>
+        </member>
+        <member name="P:SemVer.SemanticVersion.Major">
+            <summary>
+            主版本号
+            </summary>
+        </member>
+        <member name="P:SemVer.SemanticVersion.Minor">
+            <summary>
+            次版本号
+            </summary>
+        </member>
+        <member name="P:SemVer.SemanticVersion.Patch">
+            <summary>
+            修订号
+            </summary>
+        </member>
+        <member name="P:SemVer.SemanticVersion.Prerelease">
+            <summary>
+            先行版本号
+            </summary>
+        </member>
+        <member name="P:SemVer.SemanticVersion.Build">
+            <summary>
+            版本编译信息
+            </summary>
+        </member>
+        <member name="P:SemVer.SemanticVersion.IsStable">
+            <summary>
+            是否为稳定版本
+            </summary>
+        </member>
+        <member name="M:SemVer.SemanticVersion.CompareTo(System.Object)">
+            <summary>
+            比较
+            </summary>
+            <param name="obj">一个 SemanticVersion 对象</param>
+            <returns>比较结果</returns>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:SemVer.SemanticVersion.CompareTo(SemVer.SemanticVersion)">
+            <summary>
+            比较 SemanticVersion。根据定义，版本编译信息不会被比较。
+            </summary>
+        </member>
+        <member name="M:SemVer.SemanticVersion.Equals(SemVer.SemanticVersion)">
+            <summary>
+            比较 SemanticVersion。根据定义，版本编译信息不会被比较。
+            </summary>
+        </member>
+        <member name="M:SemVer.SemanticVersion.ToString(System.String,System.IFormatProvider)">
+            <summary>
+            按格式转换为字符串
+            </summary>
+            <param name="format">支持的格式</param>
+            <param name="formatProvider">格式化器，默认是 SemanticVersionFormatProvider</param>
+            <returns>字符串</returns>
+        </member>
+        <member name="M:SemVer.SemanticVersion.ComparePrerelease(SemVer.SemanticVersion,SemVer.SemanticVersion)">
+            <summary>
+            比较 prerelease
+            </summary>
+        </member>
+        <member name="M:SemVer.SemanticVersion.IsValidPrerelease(System.String,System.String[])">
+            <summary>
+            验证 prerelease 是否有效
+            </summary>
+        </member>
+        <member name="M:SemVer.SemanticVersion.IsValidBuild(System.String)">
+            <summary>
+            验证 build 是否有效
+            </summary>
+        </member>
+        <member name="M:SemVer.SemanticVersion.IsNumericString(System.String,System.Int32@)">
+            <summary>
+            是否为一个数值字符串（数值必须大于或等于0）
+            </summary>
+            <param name="segment">字符串</param>
+            <param name="value">返回数值</param>
+            <returns>是否为一个数值字符串</returns>
+        </member>
+        <member name="M:SemVer.SemanticVersion.Equals(System.Object)">
+            <summary>
+            比较 SemanticVersion。根据定义，版本编译信息不会被比较。
+            </summary>
+        </member>
+        <member name="M:SemVer.SemanticVersion.GetHashCode">
+            <summary>
+            获得HashCode。根据定义，版本编译信息不会参与生成HashCode。
+            </summary>
+        </member>
+        <member name="M:SemVer.SemanticVersion.op_Equality(SemVer.SemanticVersion,SemVer.SemanticVersion)">
+            <summary>
+            比较 SemanticVersion。根据定义，版本编译信息不会被比较。
+            </summary>
+        </member>
+        <member name="M:SemVer.SemanticVersion.op_Inequality(SemVer.SemanticVersion,SemVer.SemanticVersion)">
+            <summary>
+            比较 SemanticVersion。根据定义，版本编译信息不会被比较。
+            </summary>
+        </member>
+        <member name="M:SemVer.SemanticVersion.op_LessThan(SemVer.SemanticVersion,SemVer.SemanticVersion)">
+            <summary>
+            比较 SemanticVersion。根据定义，版本编译信息不会被比较。
+            </summary>
+        </member>
+        <member name="M:SemVer.SemanticVersion.op_GreaterThan(SemVer.SemanticVersion,SemVer.SemanticVersion)">
+            <summary>
+            比较 SemanticVersion。根据定义，版本编译信息不会被比较。
+            </summary>
+        </member>
+        <member name="M:SemVer.SemanticVersion.op_LessThanOrEqual(SemVer.SemanticVersion,SemVer.SemanticVersion)">
+            <summary>
+            比较 SemanticVersion。根据定义，版本编译信息不会被比较。
+            </summary>
+        </member>
+        <member name="M:SemVer.SemanticVersion.op_GreaterThanOrEqual(SemVer.SemanticVersion,SemVer.SemanticVersion)">
+            <summary>
+            比较 SemanticVersion。根据定义，版本编译信息不会被比较。
+            </summary>
+        </member>
+        <member name="M:SemVer.SemanticVersion.TryParse(System.String,SemVer.SemanticVersion@)">
+            <summary>
+            将字符串解析为SemanticVersion
+            </summary>
+            <param name="segVerStr">字符串</param>
+            <param name="value">返回SemanticVersion对象</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:SemVer.SemanticVersion.Parse(System.String)">
+            <summary>
+            将字符串解析为SemanticVersion。失败返回null
+            </summary>
+            <param name="segVerStr">字符串</param>
+            <returns>返回SemanticVersion对象或null</returns>
+        </member>
+        <member name="M:SemVer.SemanticVersion.ToString">
+            <summary>
+            转换为字符串
+            </summary>
+        </member>
+        <member name="T:SemVer.SemanticVersionFormat">
+            <summary>
+            SemanticVersion 格式化器
+            </summary>
+        </member>
+        <member name="P:SemVer.SemanticVersionFormat.Default">
+            <summary>
+            获得默认格式化器
+            </summary>
+        </member>
+        <member name="M:SemVer.SemanticVersionFormat.Format(System.String,System.Object,System.IFormatProvider)">
+            <summary>
+            格式化 SemanticVersion
+            </summary>
+        </member>
+        <member name="M:SemVer.SemanticVersionFormat.GetFormat(System.Type)">
+            <summary>
+            获得格式化器对象
+            </summary>
+        </member>
+    </members>
+</doc>
