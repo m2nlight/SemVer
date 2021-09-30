@@ -18,7 +18,6 @@
         "yzhang.markdown-all-in-one",
         "davidanson.vscode-markdownlint",
         "dotjoshjohnson.xml",
-        "humao.rest-client",
-        "msjsdiag.debugger-for-edge"
+        "humao.rest-client"
     ]
 }
